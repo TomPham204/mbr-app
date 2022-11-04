@@ -21,7 +21,7 @@
             <th>Type</th>
             <th>Start time</th>
             <th>End time</th>
-            <th>Reward date</th>
+            <th>Reward day(s)</th>
             <th>Token</th>
           </tr>
         </thead>
@@ -78,7 +78,6 @@ export default {
     },
     async fetch(date) {
       this.date = date;
-      console.log(date);
       await this.$store.dispatch('user/getProviderRewards', date);
     },
   },
