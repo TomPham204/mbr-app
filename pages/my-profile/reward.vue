@@ -5,7 +5,6 @@
       <div class="basis-1/4 flex items-center justify-center">
         <month-picker-input
           class="ml-2"
-          :no-default="true"
           @change="fetch"
           :default-month="getCurrentMonth"
           :default-year="getCurrentYear"
